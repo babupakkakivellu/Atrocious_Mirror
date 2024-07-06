@@ -130,7 +130,7 @@ class TgUploader:
 
     async def _prepare_file(self, file_, dirpath, delete_file):
         if self._lprefix:
-            cap_mono = f"{self._lprefix} <b>{file_}</b>"
+            cap_mono = f"<b>{self._lprefix} {file_}</b>"
             self._lprefix = re_sub("<.*?>", "", self._lprefix)
             if (
                 self._listener.seed
